@@ -20,7 +20,7 @@ export default function About() {
           "authorImage": image.asset->url
       }`
       )
-      .then((data) => setAuthor(data[0]))
+      .then((data) => setAuthor(data[0], data[1]))
       .catch(console.error);
   }, []);
 
@@ -41,7 +41,7 @@ export default function About() {
               Hey there. I'm{" "}
               <span className="text-blue-100">{author.name}</span>
             </h1>
-            <p className="text-blue-200 text-lg">{author.bio}</p>
+            <p className="text-blue-200 text-3xl">{author.bio}</p>
           </div>
         </section>
       </div>

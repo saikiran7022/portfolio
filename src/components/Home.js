@@ -1,4 +1,4 @@
-import react from "react"
+import React from "react"
 import image from "../one.jpg"
 
 export default function Home(){
